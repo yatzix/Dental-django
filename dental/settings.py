@@ -71,7 +71,7 @@ WSGI_APPLICATION = 'dental.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR / 'db.sqlite3'),
     }
 }
 
@@ -120,9 +120,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 EMAIL_HOST = 'smtp.google.com'
 EMAIL_PORT= 587
-EMAIL_HOST_USER= 'Universitydentalcare22@gmail.com'
-EMAIL_HOST_PASSWORD = 'PASSword'
-EMAIL_USE_TLS = False
+EMAIL_HOST_USER= 'univdentalclinic@gmail.com'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
 django_heroku.settings(locals())
