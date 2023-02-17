@@ -118,7 +118,7 @@ STATICFILES_DIRS = [
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-EMAIL_HOST = 'smtp.google.com'
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT= 587
 EMAIL_HOST_USER= 'univdentalclinic@gmail.com'
 EMAIL_HOST_PASSWORD = ''
