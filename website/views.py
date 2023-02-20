@@ -43,7 +43,7 @@ def appointment(request):
 		your_email = request.POST['your-email']
 		your_address = request.POST['your-address']
 		your_schedule = request.POST['your-schedule']
-		your_date = request.get['your-date']
+		your_date = request.POST['your-date']
 		your_message = request.POST['your-message']
 		
 		# send an email
