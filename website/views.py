@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from django.core.mail import send_mail
+from django.conf import settings
 
 def home(request):
 	return render(request, 'home.html', {})
@@ -14,7 +16,7 @@ def contact(request):
 		send_mail(
 			message_name, # subject
 			message, # message
-			message_email, # from email
+			settings.EMAIL_HOST_USER, # from email
 			['univdentalclinic@gmail.com'], # To Email
 			)
 
@@ -41,7 +43,7 @@ def appointment(request):
 		your_email = request.POST['your-email']
 		your_address = request.POST['your-address']
 		your_schedule = request.POST['your-schedule']
-		your_date = request.POST['your-date']
+		your_date = request.get['your-date']
 		your_message = request.POST['your-message']
 		
 		# send an email
