@@ -1,14 +1,16 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from django.core.mail import send_mail
+from django.conf import settings
 
 def home(request):
 	return render(request, 'home.html', {})
 
 def contact(request):
-	if request.method == "POST.get":
-		message_name = request.POST.get['message-name']
-		message_email = request.POST.get['message-email']
-		message = request.POST.get['message']
+	if request.method == "POST":
+		message_name = request.POST['message-name']
+		message_email = request.POST['message-email']
+		message = request.POST['message']
 
 		# send an email
 		send_mail(
@@ -35,14 +37,14 @@ def service(request):
 
 
 def appointment(request):
-	if request.method == "POST.get":
-		your_name = request.POST.get['your-name']
-		your_phone = request.POST.get['your-phone']
-		your_email = request.POST.get['your-email']
-		your_address = request.POST.get['your-address']
-		your_schedule = request.POST.get['your-schedule']
-		your_date = request.POST.get['your-date']
-		your_message = request.POST.get['your-message']
+	if request.method == "POST":
+		your_name = request.POST['your-name']
+		your_phone = request.POST['your-phone']
+		your_email = request.POST['your-email']
+		your_address = request.POST['your-address']
+		your_schedule = request.POST['your-schedule']
+		your_date = request.POST['your-date']
+		your_message = request.POST['your-message']
 		
 		# send an email
 		appointment = "Name: " + your_name + " Phone: " + your_phone + " Email: " + your_email + " Address: " + your_address + " Schedule: " + your_schedule + " Day: " + your_date + " Message: " + your_message

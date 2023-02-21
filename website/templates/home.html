@@ -140,8 +140,7 @@
               <!-- Welcome Text -->
               <div class="welcome-text text-center">
                 <h2 data-animation="fadeInUp" data-delay="100ms">Where every smile is treated with care.</h2>
-                <p data-animation="fadeInUp" data-delay="300ms">As a leading industry innovator, Dento is opening up exciting new opportunities for dental professionals, investors, employees & suppliers. Contact us to find out what we have to
-                  offer you.</p>
+                <p data-animation="fadeInUp" data-delay="300ms">Our team of experienced and friendly dental professionals is committed to making your visits to our clinic as comfortable and stress-free as possible. We understand that going to the dentist can be a daunting experience for many people, which is why we prioritize patient comfort and satisfaction above all else.</p>
                 <div class="welcome-btn-group">
                   <a href="#" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
                   <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Us</a>
@@ -160,8 +159,7 @@
               <!-- Welcome Text -->
               <div class="welcome-text text-center">
                 <h2 data-animation="fadeInDown" data-delay="100ms">We make it possible for everyone to have quality dental care.</h2>
-                <p data-animation="fadeInDown" data-delay="300ms">As a leading industry innovator, Dento is opening up exciting new opportunities for dental professionals, investors, employees & suppliers. Contact us to find out what we have to
-                  offer you.</p>
+                <p data-animation="fadeInDown" data-delay="300ms">We are also committed to providing affordable dental care to our patients. We accept most insurance plans and offer a variety of payment options to ensure that everyone can receive the dental care they need.</p>
                 <div class="welcome-btn-group">
                   <a href="contact.html" class="btn dento-btn mx-2" data-animation="fadeInDown" data-delay="500ms">Get Started</a>
                   <a href="contact.html" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Contact Us</a>
@@ -193,8 +191,10 @@
               <h2>About Us</h2>
               <div class="line"></div>
             </div>
-            <p>Vestibulum condimentum, risus sedones honcus rutrum, salah lacus mollis zurna, nec finibusmi velit advertisis. Proin vitae odin quis magna aliquet laciniae. Etiam auctor, nisi vel. Pellentesque ultrices nisl quam iaculis, nec pulvinar
-              augue.</p>
+            <p>Our team of dental professionals includes experienced dentists, hygienists, and support staff who are committed to providing exceptional patient care. We take the time to listen to our patients, understand their needs and concerns, and develop personalized treatment plans to help them achieve their dental goals. 
+            At University Dental Clinic, we believe that education and prevention are key to maintaining good oral health. That's why we are dedicated to educating our patients on the importance of good oral hygiene, proper nutrition, and routine dental care.
+
+            We are proud to serve the Riverside community and look forward to helping our patients achieve healthy, beautiful smiles that last a lifetime. Contact us today to schedule your appointment and experience the University Dental Clinic difference.</p>
 
             <!-- Single Skills Area -->
             <div class="single-skills-area mt-30">
@@ -371,7 +371,7 @@
         <div class="col-12">
           <!-- Appointment Form -->
           <div class="appointment-form">
-            <form action="{% url 'appointment' %}" method="POST.get">
+            <form action="{% url 'appointment' %}" method="POST">
               {% csrf_token %}
               <div class="row">
                 <div class="col-md-6">
@@ -436,7 +436,7 @@
   <!-- ***** Dento Dentist Area Start ***** -->
   <section class="dentist-area section-padding-100-0">
     <div class="container">
-      <div class="row">
+      <div class="row justify-content-center align-items-center">
         <!-- Section Heading -->
         <div class="col-12">
           <div class="section-heading text-center">
@@ -447,7 +447,7 @@
       </div></div>
 
       
-      <div class="row">
+      <div class="row justify-content-center align-items-center">
         <!-- Single Dentist Area -->
         <div class="col-12 col-sm-6 col-md-4">
           <div class="single-dentist-area mb-100">
@@ -507,21 +507,6 @@
               </div>
               <!-- Content -->
               <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
-                <h6>Arron Ramsey</h6>
-                <p>-Patient</p>
-              </div>
-            </div>
-
-            <!-- Single Testimonials Slide -->
-            <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="{% static 'website/img/bg-img/8.jpg' %}" alt="">
-              </div>
-              <!-- Content -->
-              <div class="testimonial-content">
                 <h5>“I recently visited Dr.Medina and his staff, and I have to say, it was one of the most pleasant dental experiences I've ever had. From the moment I walked in the door, I felt welcomed and at ease. The waiting room was clean and modern, and the staff at the front desk were friendly and helpful.
 
                 When I was called back to the exam room, the dental assistant who worked with me was incredibly gentle and patient. She explained everything she was doing, and made sure I was comfortable throughout the entire process. The dentist who performed my exam was also wonderful - he was thorough and professional, but also very personable and easy to talk to.
@@ -540,9 +525,22 @@
               </div>
               <!-- Content -->
               <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
-                <h6>Arron Ramsey</h6>
+                <h5>"I had a great experience at University Dental Clinic. The staff was very friendly and professional, and they made me feel comfortable throughout my visit. The clinic was clean and modern, and the dentist took the time to explain everything to me. I highly recommend this dental clinic for anyone looking for quality care in a comfortable setting."</h5>
+                <h6>Eduardo</h6>
+                <p>-Patient</p>
+              </div>
+            </div>
+
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg-img/8.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>"I recently visited University Dental Clinic and was pleasantly surprised by the level of comfort I experienced during my appointment. The staff was incredibly friendly and made me feel at ease, and the dentist was gentle and attentive throughout my exam. I highly recommend this clinic for anyone seeking a comfortable and stress-free dental experience!"</h5>
+                <h6>James</h6>
                 <p>-Patient</p>
               </div>
             </div>
@@ -564,7 +562,7 @@
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="single-footer-widget">
             <a href="home.html" class="d-block mb-4"><img src="{% static 'website/img/core-img/logo.png' %}" alt=""></a>
-            <p>Etiam sutor risus, dapibus act elefend katen, lacinia sitamet denim. Mauris sagittis kansa interdum dignissim.</p>
+            <p>Whether you're a long-time patient or new to our clinic, we welcome you to our community of dental health. Thank you for choosing University Dental Clinic for your dental needs.</p>
             <div class="footer-contact">
               <p><i class="icon_pin"></i> 2211 University Ave, Riverside, CA 92507</p>
               <p><i class="icon_phone"></i> (951) 289-9198</p>
@@ -600,7 +598,6 @@
             <nav>
               <ul class="quick-links">
                 <li><a href="#">About</a></li>
-                <li><a href="#">FAQs</a></li>
                 <li><a href="#">Contact</a></li>
                 
                 
