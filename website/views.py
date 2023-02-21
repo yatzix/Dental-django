@@ -16,7 +16,7 @@ def contact(request):
 		send_mail(
 			message_name, # subject
 			message, # message
-			message_email, # from email
+			settings.EMAIL_HOST_USER, # from email
 			['univdentalclinic@gmail.com'], # To Email
 			)
 
@@ -53,7 +53,7 @@ def appointment(request):
 			'Appointment Request', # subject
 			appointment, # message
 			your_email, # from email
-			['univdentalclinic@gmail.com'], # To Email
+			['univdentalclinic@gmail.com'],  # To Email
 			)
 		
 		return render(request, 'appointment.html', {
