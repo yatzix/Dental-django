@@ -12,7 +12,11 @@ def contact(request):
 		message_email = settings.EMAIL_HOST_USER 
 		message = request.POST['message']
 
+
 		# send an email
+		message = "Name: " + message_name + " Email: " + message_email + " Message: " + message
+ 
+ 
 		send_mail(
 			message_name, # subject
 			message, # message
